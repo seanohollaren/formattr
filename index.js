@@ -1,3 +1,9 @@
+/*
+      "Even brave men blind themselves sometimes, when they are afraid to see."
+
+          ~ Beric Dondarrion
+*/
+
 /**
 NAME
 lib/format/index.js
@@ -54,11 +60,25 @@ function formatName(formatString, lastName, firstName, middleName) {
         else throw new Error('Last name was requested in formatString but not supplied');
     });
 
+    // Format last initial and insert into string
+    formatString = formatString.replace(/\{l\}/i, function (last) {
+        if (lastName) return formatNamePart(lastName.charAt(0)) + '.';
+
+        else throw new Error('Last initial was requested in formatString but not supplied');
+    });
+
     // Format first name and insert into string
     formatString = formatString.replace(/\{first\}/i, function (first) {
         if (firstName) return formatNamePart(firstName);
 
         else throw new Error('First name was requested in formatString but not supplied');
+    });
+
+    // Format first initial and insert into string
+    formatString = formatString.replace(/\{f\}/i, function (first) {
+        if (firstName) return formatNamePart(firstName.charAt(0)) + '.';
+
+        else throw new Error('First initial was requested in formatString but not supplied');
     });
 
     // Format middle name and insert into string
