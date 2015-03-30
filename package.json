@@ -1,0 +1,31 @@
+{
+  "name": "formattr",
+  "version": "0.0.1",
+  "description": "A small library which formats names and single-line addresses",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tbd"
+  },
+  "keywords": [
+    "format",
+    "formatter",
+    "formattr",
+    "title",
+    "case",
+    "titlecase",
+    "name",
+    "address"
+  ],
+  "author": "Sean O'Hollaren",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "~2.2.0"
+  }
+}
