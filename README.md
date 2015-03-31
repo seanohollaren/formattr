@@ -22,7 +22,7 @@ First, make sure you have `formattr` installed and imported:
 
 ### formatName
 ######formatName(formatString, last, first, middle)
-`formatName` allows you to specify a `formatString` (like '{last}, {first} {middle}') when passing the name arguments to define how you'd like the string returned.  Use the full words (first, middle, last) to request the full name back.  Use the first letter of the word (f, m, l) to request the initial of that name back along with a period.
+`formatName` allows you to specify a `formatString` (like '{last}, {first} {middle}') when passing the name arguments to define how you'd like the string returned.  Use the full words (`first`, `middle`, `last`) to request the full name back.  Use the first letter of the word (`f`, `m`, `l`) to request the initial of that name back along with a period.
 
 ```javascript
 formattr.formatName('{last}, {first} {m}', 'rambo', 'john', 'james')   // 'Rambo, John J.'
