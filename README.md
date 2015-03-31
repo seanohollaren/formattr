@@ -66,6 +66,12 @@ formattr.formatAddress('123 N fake ST springfield, il 62701')
 formattr.titleCase('this is a string')  // 'This Is A String'
 ```
 
+## Tests
+To run the included tests, execute this from the root of the repository:
+```javascript
+npm test
+```
+
 ## Disclaimer
 This is still early code and is subject to bugs and changes.  Please thoroughly test it before relying too heavily on it.
 
