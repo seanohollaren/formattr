@@ -25,11 +25,13 @@ First, make sure you have `formattr` installed and imported:
 `formatName` allows you to specify a format string (like '{last}, {first} {middle}') when passing the name arguments to define how you'd like the string returned.  Use the full words (first, middle, last) to request the full name back.  Use the first letter of the word (f, m, l) to request the initial of that name back along with a period.
 
 ```javascript
-formattr.formatName('{last}, {first} {m}', 'rambo', 'john', 'james')     // 'Rambo, John J.'
+formattr.formatName('{last}, {first} {m}', 'rambo', 'john', 'james')   // 'Rambo, John J.'
 
-formattr.formatName('{first} {last}', 'mcclane', 'john')                 // 'John McClane'
+formattr.formatName('{first} {last}', 'mcclane', 'john')               // 'John McClane'
 
-formattr.formatName('{f} {last}', 'plissken', 'snake')                   // 'S. Plissken'
+formattr.formatName('{f} {last}', 'plissken', 'snake')                 // 'S. Plissken'
+
+formattr.formatName('{last}. {first} {last}.', 'bond', 'james')        // 'Bond. James Bond.'
 ```
 
 ### formatNamePart
@@ -46,12 +48,14 @@ formattr.formatNamePart('jAmEs')    // 'James'
 
 ### formatAddress
 ######formatAddress(input)
-`formatNamePart` will format an address string and properly case cardinal/ordinal directions (like N and NW) and all US state abbreviations.
+`formatAddress` will format an address string and properly case cardinal/ordinal directions (like N and NW) and all US state abbreviations.
 
 ```javascript
-formattr.formatAddress('5567 sw nakatomi plaza las angeles, ca 90064')  // '5567 SW Nakatomi Plaza Las Angeles, CA 90064'
+formattr.formatAddress('5567 sw nakatomi plaza las angeles, ca 90064')  
+                    // '5567 SW Nakatomi Plaza Las Angeles, CA 90064'
 
-formattr.formatAddress('123 N fake ST springfield, il 62701')           // '123 N Fake St Springfield, IL 62701'
+formattr.formatAddress('123 N fake ST springfield, il 62701')           
+                    // '123 N Fake St Springfield, IL 62701'
 ```
 
 ### titleCase
