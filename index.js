@@ -48,42 +48,42 @@ function formatName(formatString, lastName, firstName, middleName) {
     if (!formatString) throw new Error('formatString was not supplied.  Need a format specifier like \'{last}, {first} {middle}\'');
 
     // Format last name and insert into string
-    formatString = formatString.replace(/\{last\}/i, function (last) {
+    formatString = formatString.replace(/\{last\}/ig, function (last) {
         if (lastName) return formatNamePart(lastName);
 
         else throw new Error('Last name was requested in formatString but not supplied');
     });
 
     // Format last initial and insert into string
-    formatString = formatString.replace(/\{l\}/i, function (last) {
+    formatString = formatString.replace(/\{l\}/ig, function (last) {
         if (lastName) return formatNamePart(lastName.charAt(0)) + '.';
 
         else throw new Error('Last initial was requested in formatString but not supplied');
     });
 
     // Format first name and insert into string
-    formatString = formatString.replace(/\{first\}/i, function (first) {
+    formatString = formatString.replace(/\{first\}/ig, function (first) {
         if (firstName) return formatNamePart(firstName);
 
         else throw new Error('First name was requested in formatString but not supplied');
     });
 
     // Format first initial and insert into string
-    formatString = formatString.replace(/\{f\}/i, function (first) {
+    formatString = formatString.replace(/\{f\}/ig, function (first) {
         if (firstName) return formatNamePart(firstName.charAt(0)) + '.';
 
         else throw new Error('First initial was requested in formatString but not supplied');
     });
 
     // Format middle name and insert into string
-    formatString = formatString.replace(/\{middle\}/i, function (middle) {
+    formatString = formatString.replace(/\{middle\}/ig, function (middle) {
         if (middleName) return formatNamePart(middleName);
 
         else throw new Error('Middle name was requested in formatString but not supplied');
     });
 
     // Format middle initial and insert into string
-    formatString = formatString.replace(/\{m\}/i, function (middle) {
+    formatString = formatString.replace(/\{m\}/ig, function (middle) {
         if (middleName) return formatNamePart(middleName.charAt(0)) + '.';
 
         else throw new Error('Middle initial was requested in formatString but not supplied');
