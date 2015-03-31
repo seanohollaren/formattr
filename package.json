@@ -1,17 +1,17 @@
 {
   "name": "formattr",
-  "version": "0.0.1",
-  "description": "A small library which formats names and single-line addresses",
+  "version": "1.0.1",
+  "description": "A small library which formats names and US addresses",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/test-formattr.js"
   },
   "repository": {
     "type": "git",
-    "url": "tbd"
+    "url": "https://github.com/seanohollaren/formattr"
   },
   "keywords": [
     "format",
