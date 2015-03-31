@@ -1,0 +1,26 @@
+{
+    "bitwise": "true",
+    "noarg": "true",
+    "freeze": "true",
+    "unused": "true",
+    "globalstrict": "true",
+    "maxparams": 4,
+    "maxdepth": 5,
+    "undef": "true",
+    "eqeqeq": "true",
+    "immed": "true",
+    "node": "true",
+    "newcap": "true",
+    "predef": [
+        "console",
+        "module",
+        "require",
+        "it",
+        "before",
+        "after",
+        "describe",
+        "$",
+        "document",
+        "AQL"
+    ]
+}
