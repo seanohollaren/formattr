@@ -48,7 +48,7 @@ formattr.formatNamePart('jAmEs')    // 'James'
 
 ### formatAddress
 ######formatAddress(input)
-`formatNamePart` will format an address string and properly case cardinal/ordinal directions (like N and NW) and all US state abbreviations.
+`formatAddress` will format an address string and properly case cardinal/ordinal directions (like N and NW) and all US state abbreviations.
 
 ```javascript
 formattr.formatAddress('5567 sw nakatomi plaza las angeles, ca 90064')  // '5567 SW Nakatomi Plaza Las Angeles, CA 90064'
