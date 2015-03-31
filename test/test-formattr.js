@@ -36,6 +36,7 @@ describe('Testing formatting library', function () {
         expect(formattr.formatName('{f} {last}', 'williams', 'ash')).to.equal('A. Williams');
         expect(formattr.formatName('{first} {middle} {last}', 'barbarian', 'conan', 'the')).to.equal('Conan The Barbarian');
         expect(formattr.formatName('{last}, {first} {m}', 'powers', 'austin', 'danger')).to.equal('Powers, Austin D.');
+        expect(formattr.formatName('The name\'s {last}.  {first} {last}.', 'bond', 'james')).to.equal('The name\'s Bond.  James Bond.');
 
         // Test error handling
         expect(formattr.formatName.bind(formattr, '{first} {middle} {last}', 'schwarzenegger', 'arnold')).to.throw(Error);
