@@ -30,6 +30,8 @@ formattr.formatName('{last}, {first} {m}', 'rambo', 'john', 'james')     // 'Ram
 formattr.formatName('{first} {last}', 'mcclane', 'john')                 // 'John McClane'
 
 formattr.formatName('{f} {last}', 'plissken', 'snake')                   // 'S. Plissken'
+
+formattr.formatName('{last}. {first} {last}', 'bond', 'james')           // 'Bond.  James Bond.'
 ```
 
 ### formatNamePart
