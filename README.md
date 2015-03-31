@@ -51,9 +51,11 @@ formattr.formatNamePart('jAmEs')    // 'James'
 `formatAddress` will format an address string and properly case cardinal/ordinal directions (like N and NW) and all US state abbreviations.
 
 ```javascript
-formattr.formatAddress('5567 sw nakatomi plaza las angeles, ca 90064')  // '5567 SW Nakatomi Plaza Las Angeles, CA 90064'
+formattr.formatAddress('5567 sw nakatomi plaza las angeles, ca 90064')  
+                    // '5567 SW Nakatomi Plaza Las Angeles, CA 90064'
 
-formattr.formatAddress('123 N fake ST springfield, il 62701')           // '123 N Fake St Springfield, IL 62701'
+formattr.formatAddress('123 N fake ST springfield, il 62701')           
+                    // '123 N Fake St Springfield, IL 62701'
 ```
 
 ### titleCase
