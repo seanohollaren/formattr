@@ -28,7 +28,7 @@ First, make sure you have `formattr` installed and imported:
 ```javascript
 formattr.formatName('{last}, {first} {m}', 'rambo', 'john', 'james')   // 'Rambo, John J.'
 
-formattr.formatName('{first} {last}', 'mcclane', 'john')               // 'John McClane'
+formattr.formatName('Detective {first} {last}', 'mcclane', 'john')     // 'Detective John McClane'
 
 formattr.formatName('{f} {last}', 'plissken', 'snake')                 // 'S. Plissken'
 
