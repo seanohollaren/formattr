@@ -28,11 +28,14 @@ First, make sure you have `formattr` installed and imported:
 ```javascript
 formattr.formatName('{last}, {first} {m}', 'rambo', 'john', 'james')   // 'Rambo, John J.'
 
-formattr.formatName('I\'m {first} {last}', 'mcclane', 'john')          // 'I'm John McClane'
+formattr.formatName('{first} {last}', 'mcclane', 'john')               // 'John McClane'
 
 formattr.formatName('{f} {last}', 'plissken', 'snake')                 // 'S. Plissken'
 
 formattr.formatName('{last}. {first} {last}.', 'bond', 'james')        // 'Bond. James Bond.'
+
+formattr.formatName('I am {last}.', 'spartacus')                       // 'I am Spartacus.'
+
 ```
 
 ### formatNamePart
