@@ -1,7 +1,7 @@
 {
   "name": "formattr",
   "version": "1.0.6",
-  "description": "A small library which intelligently formats names and US addresses",
+  "description": "A module to intelligently format names and US addresses",
   "main": "index.js",
   "directories": {
     "test": "test"
