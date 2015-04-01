@@ -2,7 +2,6 @@
 A small node module to intelligently format names and addresses.
 
 It's here to help out with annoying formatting issues like:
-* test
 * automatically handling Irish and Scottish names (like O'Brien and MacDonald)
 * deciding whether something is a name or an abbreviation (formatting both Jo and JJ correctly)
 * turning a non-formatted address into one that's nice to look at 
