@@ -4,7 +4,7 @@ A small node module to intelligently format names and addresses.
 It's here to help out with annoying formatting issues like:
 * automatically handling Irish and Scottish names (like O'Brien and MacDonald)
 * deciding whether something is a name or an abbreviation (formatting both Jo and JJ correctly)
-* turning a non-formatted address into one that's nice to look at 
+* turning a non-formatted address into one that's nice to look at
 
 ## Installation
 
@@ -21,7 +21,8 @@ First, make sure you have `formattr` installed and imported:
     var formattr = require("formattr");
 
 ### formatName
-######formatName(formatString, last, first, middle)
+#####formatName(formatString, last, first, middle)
+
 `formatName` allows you to specify a `formatString` (like '{last}, {first} {middle}') when passing the name arguments to define how you'd like the string returned.  Use the full words (`first`, `middle`, `last`) to request the full name back.  Use the first letter of the word (`f`, `m`, `l`) to request the initial of that name back along with a period.
 
 ```javascript
@@ -35,7 +36,8 @@ formattr.formatName('{last}. {first} {last}.', 'bond', 'james')        // 'Bond.
 ```
 
 ### formatNamePart
-######formatNamePart(input)
+#####formatNamePart(input)
+
 `formatNamePart` is for when you're dealing with just a single part of a name (like a last name).  It'll apply casing logic to the input string and return it.
 
 ```javascript
@@ -47,19 +49,21 @@ formattr.formatNamePart('jAmEs')    // 'James'
 ```
 
 ### formatAddress
-######formatAddress(input)
+#####formatAddress(input)
+
 `formatAddress` will format an address string and properly case cardinal/ordinal directions (like N and NW) and all US state abbreviations.
 
 ```javascript
 formattr.formatAddress('5567 sw nakatomi plaza las angeles, ca 90064')  
                     // '5567 SW Nakatomi Plaza Las Angeles, CA 90064'
 
-formattr.formatAddress('123 N fake ST springfield, il 62701')           
+formattr.formatAddress('123 N fake ST springfield, il 62701')
                     // '123 N Fake St Springfield, IL 62701'
 ```
 
 ### titleCase
-######titleCase(input)
+#####titleCase(input)
+
 `titleCase` will format an address string in title case without applying any additional logic.
 
 ```javascript
