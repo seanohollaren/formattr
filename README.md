@@ -21,7 +21,7 @@ First, make sure you have `formattr` installed and imported:
     var formattr = require("formattr");
 
 ### formatName
-*formatName(formatString, last, first, middle)*
+*formatName( formatString, last, first, middle )*
 
 `formatName` allows you to specify a `formatString` (like '{last}, {first} {middle}') when passing the name arguments to define how you'd like the string returned.  Use the full words (`first`, `middle`, `last`) to request the full name back.  Use the first letter of the word (`f`, `m`, `l`) to request the initial of that name back along with a period.
 
@@ -36,7 +36,7 @@ formattr.formatName('{last}. {first} {last}.', 'bond', 'james')        // 'Bond.
 ```
 
 ### formatNamePart
-*formatNamePart(input)*
+*formatNamePart( input )*
 
 `formatNamePart` is for when you're dealing with just a single part of a name (like a last name).  It'll apply casing logic to the input string and return it.
 
@@ -49,7 +49,7 @@ formattr.formatNamePart('jAmEs')    // 'James'
 ```
 
 ### formatAddress
-*formatAddress(input)*
+*formatAddress( input )*
 
 `formatAddress` will format an address string and properly case cardinal/ordinal directions (like N and NW) and all US state abbreviations.
 
@@ -62,7 +62,7 @@ formattr.formatAddress('123 N fake ST springfield, il 62701')
 ```
 
 ### titleCase
-*titleCase(input)*
+*titleCase( input )*
 
 `titleCase` will format an address string in title case without applying any additional logic.
 
