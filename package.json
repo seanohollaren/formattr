@@ -1,6 +1,6 @@
 {
   "name": "formattr",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A module to intelligently format names and US addresses",
   "main": "index.js",
   "directories": {
