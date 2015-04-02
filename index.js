@@ -1,34 +1,3 @@
-/**
-NAME
-lib/format/index.js
-
-SYNOPSIS
-Format names and addresses
-
-DESCRIPTION
-This library will format names and addresses.
-
-formatAddress will (somewhat) intelligently format a single-line address.
-
-formatName take a supplied format string with syntax '{first} {middle} {last}'
-and last, first, middle name and return a properly cased string in the
-requested format
-
-formatNamePart will take a single string input (like a single first name) and
-return a properly cased string
-
-titleCase will convert the given string to title case but with no name logic
-applied (like looking for abbreviations or patronyms)
-
-ERRORS
-Throws an error if a name part is requested in the format string but not
-actually supplied as a parameter
-
-AUTHORS
-Sean O'Hollaren
-*/
-
-
 'use strict';
 
 var knownPatronyms = /o'|mac|mc/i;
