@@ -1,7 +1,7 @@
 'use strict';
 
-var knownPatronyms = /o'|mac|mc/i;
-var knownExceptions = /ng/i;
+var knownPatronyms = /^(o'|mac|mc)/i;
+var knownExceptions = /^ng/i;
 
 // Return string in title case
 function titleCase(input) {
