@@ -1,6 +1,6 @@
 {
   "name": "formattr",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A module to intelligently format names and US addresses",
   "main": "index.js",
   "directories": {
@@ -25,10 +25,9 @@
   ],
   "author": "Sean O'Hollaren",
   "license": "MIT",
-  "dependencies": {
-    "chai": "~2.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "chai": "~2.2.0",
     "mocha": "^4.0.1"
   }
 }
